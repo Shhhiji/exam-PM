@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="images/logo.png">
+            <img src="images/logo.png" id="logo" alt="logo">
+        </a>
+        <h1 class="title-head">
+            название сайта
+        </h1>
+        <div class="nav">
+            <a href="index.html#sale">акции</a>
+            <a href="booking.html">управление бронированием</a>
+            <div class="dropdown">
+                <button class="dropbtn">Поиск</button>
+                <div class="dropdown-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="region">Выбор региона</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="trop" name="trop">
+                                    <option value="region-1">Север</option>
+                                    <option value="region-2">Юг</option>
+                                    <option value="region-3">Запад</option>
+                                    <option value="region-4">Восток</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="date">дата отдыха</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" min="2023-06-16" max="2024-01-01" id="date" name="date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="user">кол-во участников</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" min="1" max="30" id="number" name="number"
+                                    placeholder="кол-во участников">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="level">уровень подготовки участников</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="level" name="level">
+                                    <option value="level-1">Начальный уровень</option>
+                                    <option value="level-2">Средний уровень</option>
+                                    <option value="level-3">Продвинутый уровень</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="search.html" id="search">Поиск</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="line"></div>
+
+        <details>
+            <summary>алгоритм бронирования</summary>
+            <ol>
+                <li>Перейти в раздел управление бронированием</li>
+                <li>Выбрать даты предполагаемого отдыха</li>
+                <li>Указать количество участников и их уровень подготовки</li>
+                <li>Выбрать желаемый регион для отдыха </li>
+                <li>Зарезервировать конкретные зоны которые будут включены в обязательное посещение</li>
+                <li>Определить перечень дополнительных услуг </li>
+                <li>Оформить заказ</li>
+            </ol>
+        </details>
+
+        <div class="line"></div>
+        <section class="slogan">
+            <h2 id="task">Главная цель нашей компании – сделать любой отдых удобным, комфортным и безопасным.</h2>
+            <h3 id="slogan">Девиз компании «НАЗВАНИЕ»: <br> Исполнить мечты просто!</h3>
+            <div class="feedback">
+                <h2 id="title-f">Отзывы</h2>
+                <div class="stolb">
+                    <div class="cont" id="one">
+                        <h2>Виктор</h2>
+                        <p>Какой-то текст..</p>
+                    </div>
+                    <div class="cont" id="two">
+                        <h2>Оксана</h2>
+                        <p>Какой-то текст..</p>
+                    </div>
+                </div>
+                <div class="stolb">
+                    <div class="cont" id="three">
+                        <h2>Иван</h2>
+                        <p>Какой-то текст..</p>
+                    </div>
+                    <div class="cont" id="four">
+                        <h2>Анна</h2>
+                        <p>Какой-то текст..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale" id="sale">
+            <h2 id="title-sale">Летний SALE</h2>
+            <div class="split" id="left">
+                <div class="centered">
+                    <img src="images/karelia.jpg" alt="hot-spring">
+                    <details>
+                        <summary>The Karelia</summary>
+                        <p>Тур по Карелии с горячей скидкой до 30%</p>
+                        <h6>* скидка действует с 17 июля 2023 по 01 августа 2023</h6>
+                    </details>
+                </div>
+            </div>
+            <div class="split" id="right">
+                <div class="centered">
+                    <img src="images/tour.jpg" alt="tour">
+                    <details>
+                        <summary>Special</summary>
+                        <p>Только сейчас купи любой тур на 5 человек со скидкой до 45%</p>
+                        <h6>* скидка действует с 01 июля по 08 июля 2023</h6>
+                    </details>
+                </div>
+            </div>
+            <div class="split" id="left">
+                <div class="centered">
+                    <img src="images/altai.jpg" alt="hot-spring">
+                    <details>
+                        <summary>mulan</summary>
+                        <p>Вы попробуете местный чай с молоком и вкуснейшую национальную кухню, ощутите дыхание
+                            Транссиба и узнаете, почему Улан-Удэ кажется гигантским из окна самолета в туре по Улан-Уде
+                            со скидкой до 40%</p>
+                        <h6>* скидка действует с 10 августа 2023 по 20 августа 2023</h6>
+                    </details>
+                </div>
+            </div>
+            <div class="split" id="right">
+                <div class="centered">
+                    <img src="images/khibini.jpg" alt="tour">
+                    <details>
+                        <summary>Khibiny</summary>
+                        <p>Выехав рано утром из Мурманска, вы отправитесь встречать рассвет в заполярных горах, одних из
+                            древнейших в мире со скидкой до 25%</p>
+                        <h6>* скидка действует с 10 июля по 16 июля 2023</h6>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <div class="check">
+            <div class="ch-tit">Регистрация на закрытые акции</div>
+            <div class="blck">
+                <div class="tit">
+                    <label for="name">Имя</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="txt" name="name" placeholder="имя">
+                </div>
+                <div class="tit">
+                    <label for="email">email</label>
+                </div>
+                <div class="col">
+                    <input type="email" id="email" name="email" placeholder="my@email.com">
+                </div>
+                <div class="btn">
+                    <a href="#" id="fol">Подписаться</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <a href="#number">Телефон: +7(812) ХХХ-ХХ-ХХ </a>
+    </footer>
+</body>
+
+</html>

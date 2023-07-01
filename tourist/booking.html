@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>booking</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="images/logo.png">
+            <img src="images/logo.png" id="logo" alt="logo">
+        </a>
+        <h1 class="title-head">
+            название сайта
+        </h1>
+        <div class="nav">
+            <a href="index.html#sale">акции</a>
+            <a href="booking.html">управление бронированием</a>
+            <div class="dropdown">
+                <button class="dropbtn">Поиск</button>
+                <div class="dropdown-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="region">Выбор региона</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="trop" name="trop">
+                                    <option value="region-1">Север</option>
+                                    <option value="region-2">Юг</option>
+                                    <option value="region-3">Запад</option>
+                                    <option value="region-4">Восток</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="date">дата отдыха</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" min="2023-06-16" max="2024-01-01" id="date" name="date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="user">кол-во участников</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" min="1" max="30" id="number" name="number"
+                                    placeholder="кол-во участников">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="level">уровень подготовки участников</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="level" name="level">
+                                    <option value="level-1">Начальный уровень</option>
+                                    <option value="level-2">Средний уровень</option>
+                                    <option value="level-3">Продвинутый уровень</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="search.html" id="search">Поиск</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="line"></div>
+        <div class="tit-booking">
+            <h1>Заказ тура</h1>
+            <form action="#" method="post">
+                <div class="form">
+                    <div class="form-tit">
+                        <label for="region">Выбор региона</label>
+                    </div>
+                    <div class="form-npt">
+                        <select id="region" name="region">
+                            <option value="region-1">Север</option>
+                            <option value="region-2">Юг</option>
+                            <option value="region-3">Запад</option>
+                            <option value="region-4">Восток</option>
+                        </select>
+                    </div>
+                    <div class="form-tit">
+                        <label for="name-region">название маршрута</label>
+                    </div>
+                    <div class="form-npt">
+                        <select id="name-region" name="name-region">
+                            <option id="nr" value="name-region-10">Хибины - сокровища Кольского полуострова</option>
+                            <option id="nr" value="name-region-11">Идеальный день в Карелии</option>
+                            <option id="nr" value="name-region-12">Архангельск столица Русского Севера</option>
+                            <option id="nr" value="name-region-20">Ростов-на-Дону город солнца и цветов</option>
+                            <option id="nr" value="name-region-21">Туапсе - чары Абхазии</option>
+                            <option id="nr" value="name-region-22">Дербент - Город историй</option>
+                            <option id="nr" value="name-region-30">Квест - Нетуристический Петербург</option>
+                            <option id="nr" value="name-region-31">Великий Новгород - древняя столица Севера Руси</option>
+                            <option id="nr" value="name-region-32">Выборг - королевская дорога по парку Монрепо</option>
+                            <option id="nr" value="name-region-40">Знакомьтесь - Владивосток!</option>
+                            <option id="nr" value="name-region-41">Неизвестный Улан-Удэ</option>
+                            <option id="nr" value="name-region-42">Комсомольск-на-Амуре - прекрасное место для отдыха
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-tit">
+                        <label for="date">даты отдыха</label>
+                    </div>
+                    <div class="form-npt" id="date-border">
+                        <div class="form-subtit">начальная дата</div>
+                        <input type="date" min="2023-06-16" max="2024-01-01" id="date-1" name="date">
+                        <br>
+                        <div class="form-subtit">конечная дата</div>
+                        <input type="date" min="2023-06-16" max="2024-01-01" id="date-2" name="date">
+                    </div>
+                    <div class="form-tit">
+                        <label for="place">Зоны посещения</label>
+                    </div>
+                    <div class="form-chbx">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox" name="checkbox">Хибины - река Малая Белая<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Хибины - вершина Айкуайвенчорра<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Хибины - народно-этническая станция<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Карелия - гора Сампо<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Карелия - курорт Марциальные воды<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Карелия - заповедник Кивач<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Архангельск - река<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Архангельск - смотровая площадка<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Архангельск - памятники<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Ростов-на-Дону - памятник Воинам-освободителям<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Ростов-на-Дону - фонтан Атланты<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Ростов-на-Дону - стадион Ростов Арена<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Туапсе - озеро Рица<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Туапсе - храм Симона Канонита<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Туапсе - колоннада<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Дербент -крепость Нарын-кала <br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Дербент - Арбат<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Дербент - улицы «магалам»<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Санкт-Петербург - места, которые мелькали в фильмах, сериалах и клипах<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Санкт-Петербург - роскошные парадные<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Санкт-Петербург - креативные и арт-пространства<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Великий Новгород - Кремль<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Великий Новгород - Торговая сторона<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Великий Новгород - местная «Пизанская башня»<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Выборг - гранитные скалы<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Выборг - парк Монрепо<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Выборг - храм Нептуна<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Владивосток - Корабельная набережная<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Владивосток - смотровые площадки<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Владивосток - Токаревский маяк<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Владивосток - бухта Стеклянная<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Улан-Удэ - Арбат<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Улан-Удэ - собор XVIII века<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Улан-Удэ - смотровая площадка<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Комсомольск-на-Амуре - мемориальный комплекс<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Комсомольск-на-Амуре - народно-этническая станция<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Комсомольск-на-Амуре - музеи<br>
+                        </div>
+                    </div>
+                    <div class="form-tit">
+                        <label for="number">количество человек</label>
+                    </div>
+                    <div class="form-npt">
+                        <input type="number" id="nmbr" min="1" max="30" name="nmb" placeholder="кол-во человек">
+                    </div>
+
+                    <div class="form-tit">
+                        <label for="price">стоимость</label>
+                        <div class="price">12 500 <small>₽</small></div>
+                    </div>
+
+                    <div class="form-tit">
+                        <label for="number">Дополнительные услуги</label>
+                    </div>
+                    <div class="form-chbx">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox" name="checkbox">Услуги проводника <br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Услуги аренды туристического
+                            оборудования <br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Услуги фотографа/видеооператора<br>
+                            <input type="checkbox" id="checkbox" name="checkbox">Страхование от несчастных случаев
+                        </div>
+                    </div>
+
+                    <div class="form-tit">комментарий к заказу</div>
+                    <div class="form-npt"><textarea name="comment" id="comment" cols="30" rows="10"></textarea></div>
+                    <div class="form-tit">email</div>
+                    <div class="form-npt"><input type="email" id="form-email" placeholder="my@email.com"></div>
+
+                    <div class="form-tit">
+                        <label for="price">итоговая стоимость</label>
+                        <div class="price">35 000 <small>₽</small></div>
+                    </div>
+
+                    <div class="button">
+                        <a href="#" id="send">оформить бронирование</a>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <a href="#number">Телефон: +7(812) ХХХ-ХХ-ХХ </a>
+    </footer>
+</body>
+
+</html>

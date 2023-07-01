@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>search</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="images/logo.png">
+            <img src="images/logo.png" id="logo" alt="logo">
+        </a>
+        <h1 class="title-head">
+            название сайта
+        </h1>
+        <div class="nav">
+            <a href="index.html#sale">акции</a>
+            <a href="booking.html">управление бронированием</a>
+            <div class="dropdown">
+                <button class="dropbtn">Поиск</button>
+                <div class="dropdown-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="region">Выбор региона</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="trop" name="trop">
+                                    <option value="region-1">Север</option>
+                                    <option value="region-2">Юг</option>
+                                    <option value="region-3">Запад</option>
+                                    <option value="region-4">Восток</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="date">дата отдыха</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" min="2023-06-16" max="2024-01-01" id="date" name="date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="user">кол-во участников</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" min="1" max="30" id="number" name="number"
+                                    placeholder="кол-во участников">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="level">уровень подготовки участников</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="level" name="level">
+                                    <option value="level-1">Начальный уровень</option>
+                                    <option value="level-2">Средний уровень</option>
+                                    <option value="level-3">Продвинутый уровень</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="search.html" id="search">Поиск</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="line"></div>
+        <h2 class="title" id="gal">результаты поиска</h2>
+        <div class="resume">
+            <div class="galeri">
+                <img src="images/card/khibini-card1.jpg" alt="khibini" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Хибины</h4>
+                    <ul class="one">
+                        <li class="card">регион - Север</li>
+                        <li class="card">сложность маршрута - продвинутый</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">горный массив Хибины</li>
+                                <li class="two">народно-этническая станция</li>
+                                <li class="two">река Малая Белая</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#khibini" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/karalia-card-3.jpg" alt="karalia" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Карелия</h4>
+                    <ul class="one">
+                        <li class="card">регион - Север</li>
+                        <li class="card">сложность маршрута - начальный</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">гора</li>
+                                <li class="two">народно-этническая станция</li>
+                                <li class="two">водопады</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#karelia" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/arhangelsck-card-4.jpg" alt="arhangelsck" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Архангельск</h4>
+                    <ul class="one">
+                        <li class="card">регион - Север</li>
+                        <li class="card">сложность маршрута - средний</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">река</li>
+                                <li class="two">смотровая площадка</li>
+                                <li class="two">памятник</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#arhangelsck" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/rostov-card-5.jpg" alt="rostov" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Ростов-на-Дону</h4>
+                    <ul class="one">
+                        <li class="card">регион - Юг</li>
+                        <li class="card">сложность маршрута - начальный</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">озеро</li>
+                                <li class="two">памятник</li>
+                                <li class="two">река</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#rostov" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/tyapse-card-6.jpg" alt="tyapse" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Туапсе</h4>
+                    <ul class="one">
+                        <li class="card">регион - Юг</li>
+                        <li class="card">сложность маршрута - продвинутый</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">гора</li>
+                                <li class="two">озеро</li>
+                                <li class="two">река</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#tyapse" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/derbent-card-7.png" alt="derbent" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Дербент</h4>
+                    <ul class="one">
+                        <li class="card">регион - Юг</li>
+                        <li class="card">сложность маршрута - средний</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">гора</li>
+                                <li class="two">памятник</li>
+                                <li class="two">река</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#derbent" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/piter.jpg" alt="piter" style="width: 100%;">
+                <div class="galeri-content">
+                    <h4 id="card">Санкт-Петербург</h4>
+                    <ul class="one">
+                        <li class="card">регион - Запад</li>
+                        <li class="card">сложность маршрута - начальный</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">река</li>
+                                <li class="two">народно-этническая станция</li>
+                                <li class="two">памятники</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#piter" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/novgorod-card-9.jpg" alt="novgorod" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Великий Новгород</h4>
+                    <ul class="one">
+                        <li class="card">регион - Запад</li>
+                        <li class="card">сложность маршрута - средний</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">озеро</li>
+                                <li class="two">народно-этническая станция</li>
+                                <li class="two">река</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#novgorod" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/viipuri-card-12.jpg" alt="viipuri" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Выборг</h4>
+                    <ul class="one">
+                        <li class="card">регион - Запад</li>
+                        <li class="card">сложность маршрута - продвинутый</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">Левкадийская скала</li>
+                                <li class="two">эко-тропа</li>
+                                <li class="two">смотровая площадка</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#viipuri" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="galeri">
+                <img src="images/card/vladivostock-card-10.jpg" alt="vladivostock" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Владивосток</h4>
+                    <ul class="one">
+                        <li class="card">регион - Восток</li>
+                        <li class="card">сложность маршрута - средний</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">памятник</li>
+                                <li class="two">народно-этническая станция</li>
+                                <li class="two">озеро</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#vladivostock" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeri">
+                <img src="images/card/ylanyde-card-2.png" alt="ylanyde" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Улан-Удэ</h4>
+                    <ul class="one">
+                        <li class="card">регион - Восток</li>
+                        <li class="card">сложность маршрута - продвинутый</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">гора</li>
+                                <li class="two">народно-этническая станция</li>
+                                <li class="two">озеро</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#ylanyde" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="galeri">
+                <img src="images/card/komsomolsk-card-11.jpg" alt="komsomolsk" style="width:100%">
+                <div class="galeri-content">
+                    <h4 id="card">Комсомольск-на-Амуре</h4>
+                    <ul class="one">
+                        <li class="card">регион - Восток</li>
+                        <li class="card">сложность маршрута - начальный</li>
+                        <li class="card">даты отдыха</li>
+                        <details>
+                            <summary id="menu">интересные зоны</summary>
+                            <ul>
+                                <li class="two">памятники</li>
+                                <li class="two">озеро</li>
+                                <li class="two">река</li>
+                            </ul>
+                        </details>
+                    </ul>
+                    <div class="btn-seat">
+                        <a href="seat.html#komsomolsk" class="btn-text">подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+         
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="#number">Телефон: +7(812) ХХХ-ХХ-ХХ </a>
+    </footer>
+</body>
+
+</html>

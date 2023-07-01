@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+
+.nav {
+    text-transform: uppercase;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background: rgba(146, 255, 152, 0.723);
+    color: black;
+}
+
+.dropbtn {
+    font-family: 'Lucida Sans Unicode';
+    text-transform: uppercase;
+    background-color: #000000;
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160pt;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(146, 255, 152, 0.723);
+    color: #000000;
+}
+
+
+
+input[type=text],
+select {
+    height: 25pt;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+
+input[type=text],
+select:hover {
+    background-color: rgb(146, 255, 151);
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=date] {
+    height: 20pt;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 98%;
+}
+
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+input[type=date]:hover {
+    background-color: rgb(146, 255, 151);
+}
+
+input[type=number] {
+    height: 20pt;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 97%;
+
+}
+
+input[type=number]:hover {
+    background-color: rgb(146, 255, 151);
+}
+
+#search {
+    display: block;
+    text-transform: uppercase;
+    background-color: rgb(146, 255, 151);
+    color: black;
+    padding: 12pt 20pt;
+    border: #000000;
+    cursor: pointer;
+    width: 75%;
+    margin-top: 9pt;
+}
+
+#search:hover {
+    background-color: rgb(146, 255, 151);
+}
+
+
+.col-25 {
+    margin: 2pt 0 0 8pt;
+    width: 100%;
+}
+
+.col-75 {
+    margin-top: 5pt;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+summary {
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 16pt;
+}
+
+
+.header {
+    height: 150pt;
+    background-color: rgb(146, 255, 151);
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin-top: 50pt;
+    width: 10%;
+}
+
+.title-head {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220pt;
+    text-transform: uppercase;
+
+}
+
+
+.main {
+    margin-top: 0;
+}
+
+.line {
+    border-bottom: 3pt solid rgb(0, 0, 0);
+}
+
+#task {
+    text-align: center;
+    font-size: 40pt;
+    font-stretch: ultra-condensed;
+    font-weight: 100;
+    padding: 20pt;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 20pt;
+    font-family: Verdana, sans-serif;
+    font-weight: 100;
+    padding: 25pt;
+}
+
+#title-f {
+    font-size: 32pt;
+    text-align: center;
+    padding: 10pt;
+}
+
+
+.cont {
+    float: none;
+    margin: 0 auto;
+    border: 1px solid white;
+    width: 80%;
+    padding: 5pt;
+}
+
+#one {
+    background-color: rgb(96, 255, 104);
+}
+
+#two {
+    background-color: rgba(54, 252, 64, 0.611);
+}
+
+#three {
+    background-color: rgba(54, 252, 64, 0.479);
+}
+
+#four {
+    background-color: rgba(133, 255, 139, 0.408);
+}
+
+.stolb:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#title-sale {
+    font-weight: 100;
+    font-size: 40pt;
+    text-align: center;
+    color: rgb(29, 149, 35);
+    text-transform: uppercase;
+    background-color: rgb(156, 254, 161);
+}
+
+.sale {
+    margin-top: 20pt;
+}
+
+.split {
+    height: 580pt;
+    width: 50%;
+}
+
+#left {
+    float: left;
+    background-color: rgb(156, 254, 161);
+}
+
+#left img {
+    width: 50%;
+    height: 50%;
+}
+
+#right {
+    float: right;
+    background-color: rgb(156, 254, 161);
+}
+
+#right img {
+    width: 48%;
+    height: 50%;
+}
+
+.centered {
+    margin-top: 20pt;
+    padding: 10pt;
+    text-align: center;
+}
+
+
+.ch-tit {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27pt;
+}
+
+.blck {
+    margin: 0 0 0 365pt;
+}
+
+.tit {
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 2pt 0 0 5pt;
+}
+
+#email {
+    display: inline-block;
+    margin: 2pt 0 10pt 5pt;
+    width: 50%;
+    height: 20pt;
+    border: 1pt solid silver;
+}
+
+#txt {
+    text-align: left;
+    display: inline-block;
+    margin: 2pt 0 10pt 5pt;
+    height: 20pt;
+    width: 50%;
+    background-color: white;
+    border: 1pt solid silver;
+}
+
+.btn {
+    display: block;
+    margin: 10pt 0 10pt 135pt;
+    text-align: center;
+    background-color: rgb(156, 254, 161);
+    width: 20%;
+}
+
+#fol {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+/* booking main */
+
+.tit-booking {
+    text-align: center;
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+
+.form {
+    text-align: center;
+}
+
+.form-tit {
+    font-size: 21pt;
+    text-transform: uppercase;
+}
+
+.form-subtit {
+    margin: 5pt;
+    font-weight: 900;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+#date-border {
+    padding: 0 15pt 5pt 15pt;
+    margin: 1pt 35% 1pt 35%;
+    border: 2pt solid rgba(0, 255, 0, 0.449);
+}
+
+#region {
+    text-transform: uppercase;
+    height: 30pt;
+    width: 25%;
+}
+
+#name-region {
+    text-align: justify;
+    font-weight: 100;
+    font-size: 14pt;
+    height: 30pt;
+    width: 32%;
+    margin: 3pt;
+    padding: 3pt 0 1pt 10pt;
+}
+
+
+
+#date-1 {
+    padding: 0 0 0 5pt;
+    font-size: 12pt;
+    height: 30pt;
+}
+
+#date-2 {
+    padding: 0 0 0 5pt;
+    font-size: 12pt;
+    height: 30pt;
+    margin: 0 0 7pt 0;
+}
+
+#nmbr {
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 0 0 10pt 0;
+    height: 30pt;
+    width: 25%;
+}
+
+
+.form-chbx {
+    display: flex;
+    margin: 5pt 0 5pt 40%;
+}
+
+
+.checkbox {
+    text-align: justify;
+    font-size: 14pt;
+}
+
+
+input[type="checkbox"] {
+    margin: 0 5pt 0 0;
+    appearance: none;
+    color: currentColor;
+    width: 12pt;
+    height: 12pt;
+    border: 1pt solid gray;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    background-color: rgb(0, 255, 47);
+    display: grid;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+#comment {
+    width: 32%;
+    height: 150pt;
+    border: 1.2pt solid rgb(72, 255, 0);
+}
+
+textarea {
+    font-size: 15pt;
+    resize: none;
+}
+
+#form-email {
+    width: 35.7%;
+    height: 23pt;
+    border: 1.2pt solid rgba(0, 0, 0, 0.236);
+    margin: 5pt;
+}
+
+.button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20pt;
+    margin-bottom: 30pt;
+    text-align: center;
+    border: 1.5pt solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(156, 254, 161);
+    width: 20%;
+}
+
+#send {
+    text-decoration: none;
+    font-size: 14pt;
+    color: #000000;
+}
+
+.button:hover {
+    background-color: rgba(13, 215, 2, 0.575);
+    color: white;
+}
+
+/* search resume main */
+
+.resume {
+    margin-top: 10pt;
+    margin-left: 200pt;
+}
+
+.galeri {
+    display: inline-block;
+    margin: 50pt;
+    width: 285pt;
+    box-shadow: 10pt 10pt 20pt 8pt rgb(139, 255, 145);
+    transition: 0.3s;
+}
+
+#gal {
+    margin-top: 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40pt;
+    font-weight: 100;
+}
+
+.galeri:hover {
+    box-shadow: 10pt 15pt 30pt 8pt rgba(0, 172, 63, 0.678);
+}
+
+.galeri-content {
+    padding: 2px 16px;
+}
+
+#card {
+    font-size: 14pt;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card {
+    font-size: 11pt;
+}
+
+.one {
+    margin: 2pt 0 2pt 20pt;
+}
+
+#menu {
+    text-transform: lowercase;
+    background-color: #ffffff;
+    font-size: 12pt;
+}
+
+.two {
+    font-size: 11.5pt;
+}
+
+.btn-seat {
+    text-transform: lowercase;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin-top: 5pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5pt;
+    box-shadow: -3pt -1pt 10pt 3pt rgb(139, 255, 145);
+    transition: 0.2s;
+}
+
+.btn-seat:hover {
+    box-shadow: -3pt -1pt 10pt 3pt rgba(0, 172, 63, 0.678);
+    background-color: rgba(0, 172, 63, 0.471);
+    border-radius: 30pt;
+}
+
+.btn-text {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-text:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* end search resume main */
+
+
+
+/* seat route main */
+
+.route {
+    display: block;
+    margin: 20pt;
+    padding: 15pt;
+    border: 3pt solid rgb(139, 255, 145);
+}
+
+
+.container {
+    padding: 2px 16px;
+}
+
+.title-container{
+    font-size: 27pt;
+    text-align: center;
+}
+
+.txt-container{
+    font-size: 17pt;
+    margin: 7pt;
+}
+
+.container-tit{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+
+.chbx{
+    display: flex;
+    margin: 5pt 0 10pt 20%;
+}
+
+.checkbox-container{
+    text-align: left;
+    font-size: 15pt;
+}
+
+.ttl{
+    font-size: 17pt;
+    text-align: center;
+}
+
+
+.btn-booking{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    margin-top: 15pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10pt;
+    box-shadow: -3pt -1pt 10pt 7pt rgb(125, 255, 131);
+    transition: 0.2s;
+}
+
+.btn-booking:hover {
+    background-color: rgb(139, 255, 145);
+    border-radius: 30pt;
+}
+
+#img-block {
+    margin: 5pt;
+    margin-bottom: 10pt;
+    display: block;
+    float: right;
+}
+
+#img-block-1{
+    margin: 5pt;
+    margin-bottom: 10pt;
+    display: block;
+    float: right;
+    box-shadow: -3pt -1pt 18pt 2pt rgb(125, 255, 131);
+
+    /* border: 1pt solid rgb(125, 255, 131); */
+}
+
+/* end seat route main */
+
+.footer {
+    text-align: right;
+    position: static;
+    font-size: 20pt;
+    background-color: #00000028;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer,
+footer a:hover {
+    color: rgba(0, 135, 0, 0.403);
+}

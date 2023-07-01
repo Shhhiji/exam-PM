@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>seat</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="images/logo.png">
+            <img src="images/logo.png" id="logo" alt="logo">
+        </a>
+        <h1 class="title-head">
+            название сайта
+        </h1>
+        <div class="nav">
+            <a href="index.html#sale">акции</a>
+            <a href="booking.html">управление бронированием</a>
+            <div class="dropdown">
+                <button class="dropbtn">Поиск</button>
+                <div class="dropdown-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="region">Выбор региона</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="trop" name="trop">
+                                    <option value="region-1">Север</option>
+                                    <option value="region-2">Юг</option>
+                                    <option value="region-3">Запад</option>
+                                    <option value="region-4">Восток</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="date">дата отдыха</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" min="2023-06-16" max="2024-01-01" id="date" name="date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="user">кол-во участников</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" min="1" max="30" id="number" name="number"
+                                    placeholder="кол-во участников">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="level">уровень подготовки участников</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="level" name="level">
+                                    <option value="level-1">Начальный уровень</option>
+                                    <option value="level-2">Средний уровень</option>
+                                    <option value="level-3">Продвинутый уровень</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="search.html" id="search">Поиск</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="line"></div>
+        <h2 class="title" id="gal">Выборы зон в маршруте</h2>
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/khibini-1.png" id="img-block-1" alt="khibini" style="width:45%">
+                <h4 class="title-container" id="khibini">Хибины - сокровища Кольского полуострова</h4>
+                <p class="txt-container">
+                    Выехав рано утром из Мурманска, вы отправитесь встречать рассвет в заполярных горах, одних из
+                    древнейших в мире. По нашему продвинутому маршруту вы посетите горный массив Хибины, летом посетите
+                    самый северный ботанический сад в России, зимой — покатаетесь на
+                    снегоходах и полюбуетесь сказкой Снежной деревни. И в любое время года вам откроются чарующие
+                    пейзажи с вершины Айкуайвенчорра, а народно-этническая станция поразит богатством хибинских
+                    минералов.
+                </p>
+                <img src="images/route/1.jpg" id="img-block" alt="khibini" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">река Малая Белая<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">вершина Айкуайвенчорра<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">народно-этническая станция<br>
+                    </div>
+                </div>
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Путь к сердцу Кольского</h4>
+                <p class="txt-container">
+                    Гид заберет вас от места вашего проживания в Мурманске — и вы отправитесь к крупнейшему горному
+                    массиву
+                    на полуострове. В летний период поездка начинается в 9 утра, в зимний — в 7, так как прекрасный
+                    северный рассвет стоит встречать именно в Хибинах.
+                </p>
+                <h4 class="ttl">Подъем на вершину горы</h4>
+                <p class="txt-container">
+                    Прибыв в Кировск, расположенный у самого подножия Хибин, поднимемся по канатной дороге на вершину
+                    горы Айкуайвенчорр. Со смотровой площадки вы увидите панорамы окрестностей, белоснежные склоны,
+                    сотни озер и камни, похожие на мороженое. Я покажу отличные места для фотосессий и поделюсь
+                    любопытными историями края. А когда спустимся вниз, предложу перекусить в отличном местном
+                    заведении.
+                </p>
+                <h4 class="ttl">Потрясающая станция - Музей камня</h4>
+                <p class="txt-container">
+                    В Хибинах обнаружено более 500 видов минералов, а это в разы больше, чем на любом другом
+                    месторождении мира. Рай для коллекционеров и любителей камня! В музее вы увидите редкие минералы,
+                    включая уникальный эвдиалит, или «лопарскую кровь». А также откроете интересные факты о камнях и их
+                    свойствах.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/karelia.png" id="img-block-1" alt="karelia" style="width:45%">
+                <h4 class="title-container" id="karelia">Идеальный день в Карелии</h4>
+                <p class="txt-container">
+                    Вы проедете по одному из самых красивых маршрутов в окрестностях Петрозаводска. Посетите заповедник
+                    Кивач, гору Сампо и курорт Марциальные воды. Исследуете особенности северной природы, узнаете, что
+                    известно о древних ландшафтах Карелии и культуре региона в дохристианскую эпоху. А также услышите
+                    рассказы о знаковых личностях, самобытные легенды и забавные истории.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <img src="images/route/2.jpg" id="img-block" alt="karelia" style="width:45%">
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">гора Сампо<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">курорт Марциальные воды<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">заповедник Кивач<br>
+                    </div>
+                </div>
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Карельские зайцы</h4>
+                <p class="txt-container">
+                    Первая локация на нашем маршруте — «Долина Зайцев». Появилась она не так давно, но, тем не менее,
+                    очень любопытна: пока вы фотографируетесь с карельскими зайцами, я расскажу о том, почему они здесь
+                    появились и кто их придумал.
+                </p>
+                <h4 class="ttl">Заповедная Карелия</h4>
+                <p class="txt-container">
+                    Затем вы отправитесь в один из старейших заповедников России и первый в регионе. В этом символичном
+                    месте оцените красоту лесных просторов и второго по высоте равнинного водопада Европы. Пройдете по
+                    застывшей лаве и проникнетесь сюжетами легендарной «Калевалы». А на горе Сампо выясните, как по
+                    современному рельефу представить Карелию миллионы лет назад, и поймете, в чем уникальность ее
+                    ландшафтов.
+                </p>
+                <h4 class="ttl">История края в интересных деталях</h4>
+                <p class="txt-container">
+                    Вы узнаете о визитах в эти места поэта Державина, императоров Александра I и Александра II. Услышите
+                    о наследии Петра I. Откроете колоритные местные предания, незаурядные факты и смешные истории,
+                    которые помогут по-настоящему понять характер Карелии. А также посетите бальнеологический и грязевый
+                    курорт Марциальные воды, где узнаете об особых свойствах местной воды и сможете ее попробовать.
+
+                    А после экскурсии можно заехать в лес за грибами и ягодами, у нас сейчас сезон!
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/arhangelsk.png" id="img-block-1" alt="arhangelsk" style="width:45%">
+                <h4 class="title-container" id="arhangelsck">Архангельск столица Русского Севера</h4>
+                <p class="txt-container">
+                    Архангельск — первые морские ворота страны и порт, откуда исследователи Арктики отправлялись в
+                    экспедиции. В авто-пешеходном путешествии мы поговорим о значении города и самых интересных событиях
+                    в его более чем 400-летней истории. В нашей программе: район, где появились первые судоверфи, самый
+                    северный российский небоскрёб, истории о купцах, контрабандистах и полярниках, легенда об «Алых
+                    парусах» Грина и многое другое!
+                </p>
+                <img src="images/route/3.jpg" id="img-block" alt="archangelsk" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">река<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">смотровая площадка<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">памятники<br>
+                    </div>
+                </div>
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <p class="txt-container">
+                    За 2,5 часа вы увидите «открыточные» виды Архангельска: памятники, старинную архитектуру, набережную
+                    Северной Двины, исторические кварталы и улицы. Кроме того, пройдём там, где обычно не бывают
+                    путешественники. Вы узнаете, где в Архангельске промышляли контрабандисты и чем именно они
+                    торговали. И всё это в атмосфере непередаваемого местного колорита, воспетого сказочником Степаном
+                    Писаховым.
+
+                    В Архангельске берёт начало не только торговля с зарубежными купцами, но и освоение Арктики. Отсюда
+                    уходили экспедиции знаменитых полярников, таких как Седов и Русанов — они подарили миру открытия в
+                    самой северной части Земли. Как в 18 веке, так и в наши дни город играет важнейшую роль в
+                    организации научно-исследовательских экспедиций по изучению Арктики. Об этом и не только я буду рада
+                    вам рассказать при встрече..
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/rostov-na-donu.png" id="img-block-1" alt="rostov-na-donu" style="width:45%">
+                <h4 class="title-container" id="rostov">Ростов-на-Дону город солнца и цветов</h4>
+                <p class="txt-container">
+                    Вы погрузитесь в яркий южный колорит Ростова и удивитесь разноплановости его исторического центра.
+                    Богатые особняки местной знати соседствуют здесь с увитыми виноградниками дворами-колодцами,
+                    модернистские дома — с советскими монументальными памятниками. Я помогу ощутить самобытную атмосферу
+                    города и расскажу о его прошлом и настоящем.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">памятник Воинам-освободителям<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">фонтан Атланты<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">стадион Ростов Арена<br>
+                    </div>
+                </div>
+                <img src="images/route/4.jpg" id="img-block" alt="rostov-na-donu" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">«Визитные карточки» Ростова</h4>
+                <p class="txt-container">
+                    Вы познакомитесь с главными архитектурными символами Ростова: зданиями городской думы и
+                    государственного банка, домом актрисы Черновой, драматическим «театром-трактором» и музыкальным
+                    «театром-роялем». Рассмотрите памятник Воинам-освободителям и фонтан Атланты на центральной площади,
+                    оцените современный стадион Ростов Арена и погуляете по Большой Садовой и Пушкинскому бульвару. А
+                    также заглянете в подземные переходы и увидите там мозаичные картины, повествующие о местной жизни.
+                </p>
+                <h4 class="ttl">Ростов сквозь столетия</h4>
+                <p class="txt-container">
+                    Ростов не обошли стороной главные события XX века. Вы услышите о рабочих забастовках, революции,
+                    Гражданской и Великой Отечественной войнах и двух оккупациях. Посетите Вечный огонь и площадь
+                    Советов, оцените монументальный памятник Тачанке-ростовчанке и погуляете по уютной набережной
+                    города. В завершение заедете в старинный район Нахичевань-на-Дону, основанный переселенцами из
+                    Крыма, и увидите первый армянский театр, купеческие особняки и городскую управу. А также по желанию
+                    посетите храм Армянской апостольской церкви.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/tyapse.png" id="img-block-1" alt="tyapse" style="width:45%">
+                <h4 class="title-container" id="tyapse">Туапсе - чары Абхазии</h4>
+                <p class="txt-container">
+                    Абхазия прекрасна круглый год! Под снежным одеялом или в буйстве зелени — вы влюбитесь в эту страну
+                    после нашего путешествия. Мы заедем в курортные городки, по пути к великолепному озеру Рица
+                    полюбуемся ущельями и водопадами, а в Новом Афоне посетим храм Симона Канонита и, если захотите,
+                    осмотрим громадную пещеру. И конечно, поговорим о культуре, традициях и быте региона.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">озеро Рица<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">храм Симона Канонита<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">колоннада<br>
+                    </div>
+                </div>
+                <img src="images/route/5.jpeg" id="img-block" alt="tyapse" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Курортная Гагра</h4>
+                <p class="txt-container">
+                    Первая остановка в исторической части города. Вы рассмотрите знаменитый ресторан «Гагрипш» и
+                    услышите о Принце Ольденбургском. Прогуляетесь вдоль парка по набережной и увидите визитную карточку
+                    города — Колоннаду.
+                </p>
+                <h4 class="ttl">Сказочная дорога на Рицу</h4>
+                <p class="txt-container">
+                    По пути к звезде Кавказа вас ждут истинно абхазские пейзажи: горные реки, утопающие в мшистых лесах,
+                    и «Каменный мешок» — величественный Юпшарский каньон. Я раскрою легенды водопадов Мужские и Девичьи
+                    слёзы, а у Голубого озера расскажу о его необычном цвете. И конечно, мы увидим озеро Рица — вы
+                    убедитесь, что в жизни оно даже прекраснее, чем на фото.
+                </p>
+                <h4 class="ttl">Новый Афон</h4>
+                <p class="txt-container">
+                    В первую очередь посетим Симоно-Кананитский монастырь: в 1875 году его основали русские монахи,
+                    пришедшие из монастыря святого Пантелеимона со Святой горы Афон в Греции. Прогуляемся в городском
+                    парке с прудами, где обитают черные и белые лебеди, и поговорим об истории этого места. Увидим
+                    рукотворный водопад, над которым расположилась сказочная железнодорожная станция Псхырдзха. А если
+                    захотите, направимся в Ново-Афонскую пещеру — природный подземный дворец.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/derbent.png" id="img-block-1" alt="derbent" style="width:45%">
+                <h4 class="title-container" id="derbent">Дербент - Город историй</h4>
+                <p class="txt-container">
+                    Дербент — самый древний город России, сочетающий дух прошлого и насыщенную современную жизнь. Вы
+                    погуляете по крепости Нарын-кала и старинным улицам «магалам». А чтобы понять, как живут дербентцы
+                    сегодня, отправитесь на местный Арбат!
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">крепость Нарын-кала<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">Арбат<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">улицы «магалам»
+                    </div>
+                </div>
+                <img src="images/route/6.jpg" id="img-block" alt="derbent" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Погружение в прошлое</h4>
+                <p class="txt-container">
+                    Знакомство с Дербентом начнётся с его визитной карточки — крепости Нарын-кала. Вы услышите её
+                    многовековую историю и узнаете, как жили местные правители много веков назад. А также полюбуетесь с
+                    высоты потрясающим видом на город и Каспийское море. Осмотрев древнюю цитадель, вы отправитесь
+                    гулять
+                    по старинным извилистым улочкам «магалам» — они позволят вам погрузиться в жизнь и быт простых
+                    дербентцев.
+                </p>
+                <h4 class="ttl">Дербент сегодня</h4>
+                <p class="txt-container">
+                    Вы проедете по отреставрированной улице Мамедбекова, увидите современный парк им. Низами Гянджеви и
+                    погуляете по «улице счастливых людей» — местному Арбату. По дороге гид расскажет много интересного о
+                    традиционных блюдах Дербента, его самобытных обычаях и традициях. А также о знаменитостях,
+                    посещавших наш город или живших здесь.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/piter.png" id="img-block-1" alt="piter" style="width:45%">
+                <h4 class="title-container" id="piter">Квест - Нетуристический Петербург</h4>
+                <p class="txt-container">
+                    Мы поможем вам отыскать такие скрытые места города, которые открываются даже далеко не всем местным
+                    жителям. На этой необычной и живой прогулке, разгадывая задание за заданием и таким хитрым способом
+                    находя новые локации, вы сможете глубже прочувствовать характер и быт Санкт-Петербурга.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <img src="images/route/7.jpg" id="img-block" alt="piter" style="width:45%">
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">места, которые мелькали в фильмах, сериалах и клипах<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">роскошные парадные<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">креативные и арт-пространства
+                    </div>
+                </div>
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">По следам местных жителей</h4>
+                <p class="txt-container">
+                    Мы с любовью к нашему городу составили для вас увлекательную игру-прогулку таким образом, чтобы
+                    эстетическое наслаждение Петербургом идеально дополнялось информативной частью, а сама прогулка
+                    стала настоящим приключением! Вы увидите:
+                </p>
+                <ul>
+                    <li>настоящий непарадный Санкт-Петербург</li>
+                    <li>места, которые мелькали в фильмах, сериалах и клипах</li>
+                    <li>дворы-колодцы и системы проходных дворов</li>
+                    <li>роскошные парадные</li>
+                    <li>креативные и арт-пространства</li>
+                    <li>уютные улочки и переулочки</li>
+                    <li>и многое-многое-многое другое</li>
+                </ul>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/novgorod.png" id="img-block-1" alt="novgorod" style="width:45%">
+                <h4 class="title-container" id="novgorod">Великий Новгород - древняя столица Севера Руси</h4>
+                <p class="txt-container">
+                    Великий Новгород был одним из богатейших городов средневековой Европы и колыбелью русской
+                    государственности. Вы погуляете по Кремлю и Торговой стороне, услышите о купцах и князьях.
+                    Расшифруете особенности местной архитектуры, прикоснетесь к древней истории, легендам и сказаниям.
+                    Всё это — в легком и доступном формате!
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <img src="images/route/8.jpeg" id="img-block" alt="novgorod" style="width:45%">
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">Кремль<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">Торговая сторона<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">местная «Пизанская башня»
+                    </div>
+                </div>
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Кремль и не только</h4>
+                <p class="txt-container">
+                    Вы увидите главные достопримечательности Кремля: Софийский собор 11 века, резиденцию новгородских
+                    владык и местную «Пизанскую башню» Часозвоню. А еще мы осмотрим комплекс Ярославово дворище,
+                    прогуляемся по древнему торгу и полюбуемся набережной реки Волхов. Встретим скульптуру туристки,
+                    поговорим о «заморском» храме Параскевы Пятницы и о других церквях домонгольского периода.
+                </p>
+                <h4 class="ttl">Увлекательные истории</h4>
+                <p class="txt-container">
+                    Я расскажу, почему новгородцы называли свою крепость «детинцем» и как на кресте самого древнего
+                    храма России окаменел голубь. Где прятали свои сокровища местные владыки и как ставили единственный
+                    в стране памятник Тысячелетию России. А на Торговой стороне вы услышите о хитростях новгородских и
+                    ганзейских купцов, о шумном вече и о храмах, что «кустом стоят».
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/viborg.png" id="img-block-1" alt="viborg" style="width:45%">
+                <h4 class="title-container" id="viipuri">Выборг - королевская дорога по парку Монрепо</h4>
+                <p class="txt-container">
+                    Фактурные гранитные скалы, тенистый сосновый лес и изящные постройки, отражающиеся в водах залива —
+                    всё это пейзажный парк Монрепо. На прогулке вы познакомитесь с красивейшим уголком в окрестностях
+                    Выборга, встретите легендарного рунопевца, пройдете по китайскому мостику и услышите историю
+                    знаменитой семьи Николаи.
+                </p>
+                <img src="images/route/9.jpg" id="img-block" alt="viborg" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">гранитные скалы<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">парк Монрепо<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">храм Нептуна
+                    </div>
+                </div>
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Тропами Монрепо — от рунопевца до храма Нептуна</h4>
+                <p class="txt-container">
+                    Мы исследуем самые живописные дорожки скального парка, поднимемся на покрытые мхом валуны и вдохнем
+                    полной грудью ароматы хвои. Шаг за шагом отыщем скрытые архитектурные диковинки Монрепо, которые
+                    идеально вписываются в лесной ландшафт: уютную беседку на вершине горы и храм Нептуна, романтичный
+                    замок-часовню Людвигсбург на обрывистой скале и белоснежные китайские мостики. Вы вступите на
+                    поляну, где обнаружите каменного дракона, увидите остров Любви и остров Смерти. По извилистой лесной
+                    тропе дойдете до скульптуры героя «Калевалы», рунопевца Вяйнямёйнена с финскими гуслями «кантеле» на
+                    коленях. И, конечно, поймете, почему в Монрепо соседствуют настолько непохожие друг на друга
+                    причудливые объекты.
+                </p>
+                <h4 class="ttl">Романтичные истории семьи фон Николаи</h4>
+                <p class="txt-container">
+                    Мы поговорим не только о природе Монрепо, но и о его философии. Вы узнаете о поэте и писателе
+                    Людвиге Генрихе фон Николаи, который купил усадьбу в 18 веке и, очарованный лаконичной красотой
+                    северной природы, решил превратить её в английский парк. В каждом уголке Монрепо вы увидите
+                    воплощение главной цели Николаи — не подчинить, а вежливо дополнить природу «затеями», тропинками,
+                    скамейками, создавая пространство для «фантазии, искусства, чувства». А в восточной части парка, у
+                    старинного обелиска, мы поговорим о трогательной истории любви Пауля и Александрины Симплиции.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/vladivostock.png" id="img-block-1" alt="vladivostock" style="width:45%">
+                <h4 class="title-container" id="vladivostock">Знакомьтесь - Владивосток!</h4>
+                <p class="txt-container">
+                    Владивосток — сердце Приморского края. Я сделаю всё, чтобы вы полюбили его и запомнили надолго.
+                    Покажу знаковые места исторического центра и лучшие смотровые площадки. Расскажу удивительные факты
+                    о прошлом и настоящем города. А еще, на правах участника общества коллекционеров, помогу
+                    прикоснуться к оригинальным артефактам разных эпох.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">Корабельная набережная<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">смотровые площадки<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">Токаревский маяк<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">бухта Стеклянная
+                    </div>
+                </div>
+                <img src="images/route/10.jpeg" id="img-block" alt="vladivostock" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Корабельная набережная и смотровые площадки</h4>
+                <p class="txt-container">
+                    Вы побываете на знаменитой Корабельной набережной, где услышите историю основания Владивостока. Я
+                    покажу артефакты, связанные с этим временем: фотографии, открытки и деньги царских времен. Далее мы
+                    отправимся на смотровые площадки: Орлиное гнездо, Бурачка и Крестовая сопка. С них открываются
+                    великолепные панорамы на город, окружающий его архипелаг, Амурский и Уссурийский заливы.
+                </p>
+                <h4 class="ttl">Токаревский маяк и бухта Стеклянная</h4>
+                <p class="txt-container">
+                    Мы не ограничимся центром Владивостока и посетим живописные места за его пределами. Вы погуляете по
+                    знаменитому Стеклянному пляжу, усеянному разноцветными стеклами, и узнаете связанные с ним
+                    интересные факты. В завершение оцените «визитную карточку» города — Токаревский маяк. Он подарит
+                    изумительный вид на мосты и бухту Золотой Рог.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/ylan-yde.png" id="img-block-1" alt="ylan-yde" style="width:45%">
+                <h4 class="title-container" id="ylanyde">Неизвестный Улан-Удэ</h4>
+                <p class="txt-container">
+                    Вы пройдете по историческому центру, советским и современным кварталам Улан-Удэ. Насладитесь видом
+                    на город с высоты птичьего полета, узнаете, почему зимой он весь «в дыму», и раскроете секреты
+                    местного характера. Я сделаю все, чтобы вы полюбили Улан-Удэ так же, как когда-то в него влюбился я.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">Арбат<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">собор XVIII века<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">смотровая площадка
+                    </div>
+                </div>
+                <img src="images/route/11.jpg" id="img-block" alt="ylan-yde" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">Самые интересные места города</h4>
+                <p class="txt-container">
+                    Я покажу вам местный Арбат, великолепный Свято-Одигитриевский кафедральный собор XVIII века,
+                    интересную застройку в стиле «сибирское барокко», уютные узкие улочки, необычные граффити и отлично
+                    сохранившиеся дома сталинской эпохи. И, конечно же, мы дойдём до места основания города, откуда
+                    открывается потрясающий вид на реку.
+                </p>
+                <h4 class="ttl">Улан-Удэ изнутри</h4>
+                <p class="txt-container">
+                    Вы попробуете местный чай с молоком и вкуснейшую национальную кухню, ощутите дыхание Транссиба и
+                    узнаете, почему Улан-Удэ кажется гигантским из окна самолета. Кроме того, подниметесь на смотровую
+                    площадку дацана Ринпоче Багша и пройдете священный для буддистов круг вокруг храма.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route">
+            <div class="container">
+                <img src="images/route/path/komsomolsck.png" id="img-block-1" alt="komsomolsck" style="width:45%">
+                <h4 class="title-container" id="komsomolsk">Комсомольск-на-Амуре - прекрасное место для отдыха</h4>
+                <p class="txt-container">
+                    Комсомольск-на-Амуре — один из крупнейших в стране центров производства военно-воздушной техники. Вы
+                    рассмотрите модели самолетов местного авиационного завода и узнаете, какие модификации они
+                    претерпевали за последние десятилетия. А также проедете по главным улицам города и оцените все
+                    важнейшие памятники.
+                </p>
+                <div class="container-tit">
+                    <label for="place">Зоны посещения</label>
+                </div>
+                <div class="chbx">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="checkbox">мемориальный комплекс<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">народно-этническая станция<br>
+                        <input type="checkbox" id="checkbox" name="checkbox">музеи
+                    </div>
+                </div>
+                <img src="images/route/12.jpg" id="img-block" alt="komsomolsck" style="width:45%">
+                <div class="container-tit">
+                    <label for="place">что вас ожидает</label>
+                </div>
+                <h4 class="ttl">История и знаковые памятники города</h4>
+                <p class="txt-container">
+                    Вы узнаете, когда, как и при каких обстоятельствах был образован Комсомольск-на-Амуре, как он связан
+                    со Второй мировой войной и почему ему не присвоили заслуженное звание «города трудовой доблести». А
+                    также увидите место высадки комсомольцев 10 мая 1932 года, памятник Первостроителям и мемориальный
+                    комплекс, посвященный павшим в боях в годы Великой Отечественной войны. Кроме того, раскроете, что в
+                    городе делали Гагарин, Маресьев и Путин.
+                </p>
+                <h4 class="ttl">Авиационный и краеведческий музеи</h4>
+                <p class="txt-container">
+                    В городском краеведческом музее вы узнаете, в каких невероятно трудных условиях зарождался город и
+                    как он рос и развивался. Раскроете особенности археологии, этнографии и природы Приамурья и ощутите
+                    самобытность нашего региона. А в современном экспоцентре КНААПО услышите историю местного
+                    авиационного завода имени Гагарина и увидите модели производимых в нем самолетов прошлых и нынешних
+                    лет.
+                </p>
+                <br style="clear:both">
+                <div class="btn-booking">
+                    <a href="booking.html" class="btn-text">забронировать</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <a href="#number">Телефон: +7(812) ХХХ-ХХ-ХХ </a>
+    </footer>
+</body>
+
+</html>
